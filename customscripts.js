@@ -1,3 +1,5 @@
+//* DEPRECATED IN FACOR OF PHP FILE USAGE
+
 //* Make header shrink!
 
 function gen_shrink_head() {
