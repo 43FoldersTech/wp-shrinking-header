@@ -1,0 +1,25 @@
+/* Make header shrink! */
+
+/* First - check for size of screen ... 
+ if the screen is small, it will have a different menu and we don't want to mess with it */ 
+@media only screen and (min-width: 768px) {
+	/* in Genesis themes, this is generally the header and menu, but ymmv */
+	header.site-header {
+		max-height: 70px;
+		padding-top: 5px;
+		-moz-transition: .5s ease-in-out;
+		-webkit-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
+		-ms-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+
+	/* this is the tag that shrinks max-height. Must be max-height, not height,
+	  because we may not know the original height of the header, and transition 
+	  won't work without real num's */
+	header.site-header.shrink {
+		max-height: 50px;
+		opacity: .9;
+	}
+	
+}
